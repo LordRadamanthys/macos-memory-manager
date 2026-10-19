@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.cache-cleanup</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>__INSTALL_DIR__/scripts/cache_cleanup.sh</string>
+    </array>
+
+    <!-- Every 3 days (259200 seconds) -->
+    <key>StartInterval</key>
+    <integer>259200</integer>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>__INSTALL_DIR__/logs/cache_cleanup_stdout.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>__INSTALL_DIR__/logs/cache_cleanup_stderr.log</string>
+</dict>
+</plist>

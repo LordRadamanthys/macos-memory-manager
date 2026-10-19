@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs (generated at runtime)
+logs/
+*.log
+
+# Sudoers backup
+*.sudoers.bak
